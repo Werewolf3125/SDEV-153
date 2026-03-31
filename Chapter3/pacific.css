@@ -32,3 +32,7 @@ footer {
          font-style: italic; 
          text-align: center; 
         }
+#wrapper {width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
