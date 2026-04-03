@@ -41,6 +41,10 @@ nav {
 nav a {
     text-decoration: none; 
 }
+dt {
+    color: #002171;
+    font-weight: bold; 
+}
 .resort { 
     color: #1976D2;
         font-size: 1.2em; 
