@@ -180,7 +180,7 @@ input, textarea {
         width: 9em;
     }
     #reshero {
-        background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%)
+        background-size: 100% 100%;
     }
 }
 /* Large Display */
