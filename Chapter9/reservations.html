@@ -25,12 +25,28 @@
  <h3>Contact Us</h3>
  <p>Required fields are marked with an asterisk*.</p>
  <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
-   <label for="myFName">First Name:</label>
-   <input type="text" name="myFName" id="myFName" required>
-   <label for="myLName">Last Name:</label>
-   <input type="text" name="myLName" id="myLName" required>
-   <label for="myEmail">E-mail:</label>
-   <input type="text" name="myEmail" id="myEmail" required>
+   <label for="First">*First Name:</label>
+   <input type="text" name="First" id="First" required>
+   <label for="Last">*Last Name:</label>
+   <input type="text" name="Last" id="Last" required>
+   <label for="Street">*Street Address:</label>
+   <input type="text" name="Street" id="Street" required>
+   <label for="City">*City:</label>
+   <input type="text" name="City" id="City" required>
+   <label for="State">*State:</label>
+   <input type="text" name="State" id="State" minlength="2" maxlength="2" required>
+   <label for="Zip">*Zip Code:</label>
+   <input type="text" name="Zip" id="Zip" minlength="5" maxlength="5" required>
+   <label for="Email">*E-mail:</label>
+   <input type="text" name="Email" id="Email" required>
+   <label for="Phone">*Phone:</label>
+   <input type="text" name="Phone" id="Phone" minlength="10" maxlength="10" required>
+   <label for="Arrival">Arrival Date:</label>
+   <input type="text" name="Arrival" id="Arrival">
+   <label for="Stay">Nights from 1 to 14:</label>
+   <input type="number" name="Stay" id="Stay" min="1" max="14">
+   <label for="Comments">Comments:</label>
+   <textarea name="Comments" id="Comments" rows="2" columns="20"></textarea>
    <input type="submit" id="mySubmit" value="Submit">
 </form>
 </main>
