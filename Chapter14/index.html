@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="pacific.css" rel="stylesheet">
 </head>
-<body>
+<body onload="alert('Today only - 10% off on a weekend - coupon code ZenTen');">
 <header>
   <h1><a href="index.html">Pacific Trails Resort</a></h1>
 </header>
@@ -51,6 +51,12 @@
 <footer>
   Copyright &copy; 2020 Pacific Trails Resort<br>
   <a href="mailto:noah@bundus.com">noah@bundus.com</a>
+  <div>
+    <script>
+      document.write("<p>This document was last modified on: </p>");
+      document.write("<p>This document was last modified on: " + document.lastModified + "</p>");
+    </script>
+  </div>
 </footer>
 </div>
 </body>

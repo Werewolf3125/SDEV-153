@@ -6,24 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="pacific.css" rel="stylesheet">
 <script>
-  function validateForm() {
-    const phoneNumber = document.forms[0].Phone.value;
-      const regex = /^\d{3}-\d{3}-\d{4}$/;
-        if (regex.test(phoneNumber)) {
-          return true;
-        } else {
-          alert(
-            "Invalid phone number: include a dash after the area code and a dash after the first 3 digits of the phone number."
-          );
-          return false;
-        }
-        if (document.forms[0].Stay.value > 14) {
-          alert (
-            "Your sstay is longer than 14 nights. You cannot stay more than 2 weeks."
-          );
-          return false;
-        }
-      }
+function validateForm() {
+if (document.forms[0].Phone.value == "" ) {
+    alert("Phone field cannot be empty.");
+    return false;
+} // end if
+if (document.forms[0].Nights.value > 14) {
+    alert("Nights are more than 14. You can't stay more than two weeks.");
+    return false;
+} // end if
+alert("Phone and Nights are valid.");
+return true;
+} // end function validateForm
 </script>
 </head>
 <body>

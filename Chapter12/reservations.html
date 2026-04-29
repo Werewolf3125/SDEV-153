@@ -5,26 +5,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="pacific.css" rel="stylesheet">
-<script>
-  function validateForm() {
-    const phoneNumber = document.forms[0].Phone.value;
-      const regex = /^\d{3}-\d{3}-\d{4}$/;
-        if (regex.test(phoneNumber)) {
-          return true;
-        } else {
-          alert(
-            "Invalid phone number: include a dash after the area code and a dash after the first 3 digits of the phone number."
-          );
-          return false;
-        }
-        if (document.forms[0].Stay.value > 14) {
-          alert (
-            "Your sstay is longer than 14 nights. You cannot stay more than 2 weeks."
-          );
-          return false;
-        }
-      }
-</script>
 </head>
 <body>
 <header>
@@ -36,6 +16,7 @@
   <li><a href="yurts.html">Yurts</a></li>
   <li><a href="activities.html">Activities</a></li>
   <li><a href="reservations.html">Reservations</a></li>
+  <li><a href="shop.html">Shop</a></li>
   </ul>
 </nav>
 <div id = "wrapper">
@@ -44,8 +25,7 @@
  <h2>Reservations at Pacific Trails</h2>
  <h3>Contact Us</h3>
  <p>Required fields are marked with an asterisk*.</p>
-  <form method="post" action="https://webdevbasics.net/scripts/pacific.php"
-   onsubmit="return validateForm();">
+ <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
    <label for="First">*First Name:</label>
    <input type="text" name="First" id="First" required>
    <label for="Last">*Last Name:</label>
@@ -60,8 +40,8 @@
    <input type="text" name="Zip" id="Zip" minlength="5" maxlength="5" required>
    <label for="Email">*E-mail:</label>
    <input type="text" name="Email" id="Email" required>
-   <label for="Phone">Phone:</label>
-   <input type="text" name="Phone" id="Phone" minlength="12" maxlength="12">
+   <label for="Phone">*Phone:</label>
+   <input type="text" name="Phone" id="Phone" minlength="10" maxlength="10" required>
    <label for="Arrival">Arrival Date:</label>
    <input type="date" name="Arrival" id="Arrival">
    <label for="Stay">Nights from 1 to 14:</label>
