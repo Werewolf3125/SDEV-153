@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Mafia Returns :: Join</title>
+<title>Mafia Returns :: Gameplay</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Mafia Returns is a unique asynchronous mafia-style social deduction game played over Discord."/>
@@ -22,14 +22,20 @@
   </ul>
 </nav>
 <div id = "wrapper">
-<div id = "joinhero"></div>
+<div id = "gameplayhero"></div>
 <main>
- <h2>Join our Discord server!</h2>
- <p>If Mafia Returns sounds like fun, you can join the server through the link! There 
-  is a short questionnaire to take when joining that is intended to filter out bots and help us know how experienced you are.</p>
- <li>https://discord.gg/c5XEAmrSeZ</li>
- <p>For those who like Among Us, one of my friends made a text-based asynchronus version that we play on Discord! The link below will take you to his server.</p>
- <li>https://discord.gg/ycuSPmvx5f</li>
+  <h2>If you have any questions, fill out this short form, and I'll respond via email.</h2>
+  <p>Required fields are marked with an asterisk*.</p>
+  <form method="post" action="https://webdevbasics.net/scripts/demo.php"
+    onsubmit="return validateForm();">
+    <label for="Name">*Name:</label>
+    <input type="text" name="Name" id="Name" required>
+    <label for="Email">*E-mail:</label>
+    <input type="text" name="Email" id="Email" required>
+    <label for="Question">Your questions*:</label>
+    <textarea name="Question" id="Question" rows="3" cols="20" required></textarea>
+    <input type="submit" id="mySubmit" value="Submit">
+</form>
 </main>
 <footer>
   Copyright &copy; 2026 Lies and Logic<br>
