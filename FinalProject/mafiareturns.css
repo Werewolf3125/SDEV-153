@@ -92,14 +92,14 @@ section {
     background-position: center;
 }
 #gameplayhero {
-    height: 700px;
+    height: 600px;
     max-width: auto;
     background-image: url(discussion.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 #developmenthero {
-    height: 450px;
+    height: 400px;
     max-width: auto;
     background-image: url(sunnyinnocent.jpg);
     background-repeat: no-repeat;
