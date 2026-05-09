@@ -40,7 +40,7 @@ nav {
     font-weight: bold;
     text-align: center;
     background-color: #0de932;
-    font-size: 1.2 em;
+    font-size: 1.2em;
 }
 nav a {text-decoration: none;}
 nav a:link {color: #91f5f8;}
@@ -93,35 +93,35 @@ section {
 }
 #gameplayhero {
     height: 600px;
-    max-width: auto;
+    
     background-image: url(discussion.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 #developmenthero {
     height: 400px;
-    max-width: auto;
+    
     background-image: url(sunnyinnocent.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 #historyhero {
     height: 300px;
-    max-width: auto;
+    
     background-image: url(notpsychic.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 #joinhero {
     height: 300px;
-    max-width: auto;
+    
     background-image: url(icon.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 #questionshero {
     height: 300px;
-    max-width: auto;
+    
     background-image: url(questionmarks.png);
     background-repeat: no-repeat;
     background-position: center;
