@@ -181,7 +181,6 @@ input, textarea {
         grid-column: 2 / 3;
         width: 9em;
     }
-    
 }
 /* Large Display */
 @media (min-width: 1024px) {
